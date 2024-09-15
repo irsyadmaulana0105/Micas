@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Kaos;
-use Illuminate\Http\Request;
+use app\Http\Request;
 
 class KaosController extends Controller
 {

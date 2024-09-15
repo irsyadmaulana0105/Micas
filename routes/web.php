@@ -27,3 +27,8 @@ Route::get('/pages/create', function () {
 Route::get('/pages/overview', function () {
     return view('pages.overview'); // Mengarahkan '/pages/overview' ke view 'pages/overview.blade.php'
 })->name('overview');
+
+
+use App\Http\Controllers\KaosController;
+
+Route::get('/kaos/ubah-size/{id}/{size_baru}', [KaosController::class, 'ubahSizeKaos']);
